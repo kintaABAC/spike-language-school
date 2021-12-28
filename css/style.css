@@ -1,3 +1,8 @@
+@font-face {
+  font-family: arialBlack;
+  src: url(../arialBlack.ttf);
+}
+
 .header {
   display: block;
   text-align: center;
@@ -11,52 +16,48 @@
 }
 
 .header__logo-img {
-  width: 8rem;
+  width: 7.5rem;
   display: block;
   margin: 0 auto;
   margin-top: 1.9rem;
 }
 
-.header_div {
-  display: block;
-  text-align: center;
-}
-
 .header__h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 2.5rem;
+  font-family: arialBlack;
+  font-size: 2.2rem;
+  line-height: 3.3rem;
   background: -webkit-linear-gradient(#FFFFA6 30%, #8BFCFC);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 0px 0px #00000000;
-  -webkit-text-stroke: 0.5px black;
-  margin-top: 1.5rem;
+  -webkit-text-stroke: 0.1px rgba(53, 56, 57, 0.4);
+  margin-top: 1rem;
 }
 
 .header_h1-span {
   display: block;
 }
 
-.header__div__p {
+.header__btn {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.15rem;
   font-weight: 600;
-  width: 8rem;
+  width: 7.3rem;
   background-color: #ED8CED;
   color: #FFF;
-  text-align: center;
   margin: 0 auto;
-  padding: 0.45rem 0;
+  padding: 0.43rem 0;
+  border: none;
   border-radius: 10px;
-  margin-top: 3rem;
+  margin-top: 2.3rem;
 }
 
 .header__english-man-img {
   width: 12.5rem;
   display: block;
   margin: 0 auto;
-  margin-top: 3rem;
+  margin-top: 2.3rem;
 }
 
 .header__thai-woman-img {
@@ -71,5 +72,104 @@
   display: block;
   margin: 0 auto;
   margin-top: 3rem;
+}
+
+.main__img-container {
+  position: relative;
+  background-color: #000;
+}
+
+.main__img {
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+}
+
+.main__h2-lang {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  font-family: arialBlack;
+  font-size: 9vw;
+}
+
+.main__h2_yellow {
+  color: #FFFFA6;
+}
+
+.main__h2_cyan {
+  color: #8BFCFC;
+}
+
+.main__h2_magenta {
+  color: #ED8CED;
+}
+
+.main__p-lang {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFF;
+  font-size: 6.6vw;
+  width: 80vw;
+  line-height: 1.8rem;
+  text-align: center;
+}
+
+.main__h2-corp {
+  font-family: arialBlack;
+  font-size: 9vw;
+  margin-top: 3.5rem;
+  text-align: center;
+  color: #F0C0A8;
+}
+
+.main__p-corp {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #353839;
+  font-size: 6.6vw;
+  line-height: 1.8rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 3.5rem;
+  width: 74vw;
+}
+
+.main__circle {
+  position: relative;
+  height: 13rem;
+  width: 13rem;
+  background-color: #8BFCFC;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 3.5rem;
+}
+
+.main__img-corp {
+  position: absolute;
+  top: 6%;
+  left: 10%;
+  width: 10rem;
+}
+
+.main__btn {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  width: 8rem;
+  background-color: #ED8CED;
+  color: #FFF;
+  margin: 0 auto;
+  padding: 0.45rem 0;
+  border: none;
+  border-radius: 10px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 /*# sourceMappingURL=style.css.map */

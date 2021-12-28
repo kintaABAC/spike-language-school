@@ -1,5 +1,29 @@
-$arial: Arial, Helvetica, sans-serif;
 
+
+
+
+$arial: Arial, Helvetica, sans-serif;
+$arialBlack: arialBlack;
+$blackText: #353839;
+$pText: 6.6vw;
+$h2Text: 9vw;
+$primaryColor: #FFFFA6;
+$secondaryColor: #8BFCFC;
+$accentColor: #ED8CED;
+$additionalColor: #F0C0A8;
+
+
+
+// font
+@font-face {
+    font-family: arialBlack;
+    src: url(../arialBlack.ttf)
+  }
+  
+
+  
+
+// LP
 .header {
     display: block;
     text-align: center;
@@ -13,21 +37,17 @@ $arial: Arial, Helvetica, sans-serif;
 }
 
 .header__logo-img {
-    width: 8rem;
+    width: 7.5rem;
     display: block;
     margin: 0 auto;
     margin-top: 1.9rem;
 }
 
-.header_div {
-    display: block;
-    text-align: center;
-}
-
 .header__h1 {
-    font-family: $arial;
-    font-size: 2.5rem;
-    background: -webkit-linear-gradient(#FFFFA6 30%, #8BFCFC);   // gradient text
+    font-family: $arialBlack;
+    font-size: 2.2rem;
+    line-height: 3.3rem;
+    background: -webkit-linear-gradient($primaryColor 30%, $secondaryColor);   // gradient text
     background-clip: text;   //  standard style rule on background-clip
     -webkit-background-clip: text;   // gradient text
     -webkit-text-fill-color: transparent;   // gradient text
@@ -36,33 +56,33 @@ $arial: Arial, Helvetica, sans-serif;
     // background-clip: text;   //  standard style rule on background-clip
     // -webkit-background-clip: text;   // gradient text
     // -webkit-text-fill-color: transparent;   // gradient text
-    -webkit-text-stroke: 0.5px black;    // border on gradient text
-    margin-top: 1.5rem;
+    -webkit-text-stroke: 0.1px rgba($color: #353839, $alpha: 0.4);    // border on gradient text
+    margin-top: 1rem;
 }
 
 .header_h1-span{
     display: block;
 }
 
-.header__div__p {
+.header__btn {
     font-family: $arial;
     font-size: 1.15rem;
     font-weight: 600;
-    width: 8rem;
-    background-color: #ED8CED;
+    width: 7.3rem;
+    background-color: $accentColor;
     color: #FFF;
-    text-align: center;
     margin: 0 auto;
-    padding: 0.45rem 0;
+    padding: 0.43rem 0;
+    border: none;
     border-radius: 10px;
-    margin-top: 3rem;
+    margin-top: 2.3rem;
 }
 
 .header__english-man-img {
     width: 12.5rem;
     display: block;
     margin: 0 auto;
-    margin-top: 3rem;
+    margin-top: 2.3rem;
 }
 
 .header__thai-woman-img {
@@ -77,4 +97,111 @@ $arial: Arial, Helvetica, sans-serif;
     display: block;
     margin: 0 auto;
     margin-top: 3rem;
+}
+
+
+
+
+// main
+// langs
+.main__img-container {
+    position: relative;
+    background-color: #000;
+}
+
+.main__img {
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+}
+
+.main__h2-lang {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: $arialBlack;
+    font-size: $h2Text;
+}
+
+.main__h2_yellow {
+    color:$primaryColor;
+}
+
+.main__h2_cyan {
+    color: $secondaryColor;
+}
+
+.main__h2_magenta {
+    color: $accentColor;
+}
+
+
+.main__p-lang {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: $arial;
+    color: #FFF;
+    font-size: $pText;
+    width: 80vw;
+    line-height: 1.8rem;
+    text-align: center;
+}
+
+
+
+
+// corp
+.main__h2-corp {
+    font-family: $arialBlack;
+    font-size: $h2Text;
+    margin-top: 3.5rem;
+    text-align: center;
+    color: $additionalColor;
+}
+
+.main__p-corp {
+    font-family: $arial;
+    color: $blackText;
+    font-size: $pText;
+    line-height: 1.8rem;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 3.5rem;
+    width: 74vw;
+}
+
+.main__circle {
+    position: relative;
+    height: 13rem;
+    width: 13rem;
+    background-color: $secondaryColor;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 3.5rem;
+}
+
+.main__img-corp {
+    position: absolute;
+    top: 6%;
+    left: 10%;
+    width: 10rem;
+}
+
+.main__btn {
+    display: block;
+    font-family: $arial;
+    font-size: 1.15rem;
+    font-weight: 600;
+    width: 8rem;
+    background-color: $accentColor;
+    color: #FFF;
+    margin: 0 auto;
+    padding: 0.45rem 0;
+    border: none;
+    border-radius: 10px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
