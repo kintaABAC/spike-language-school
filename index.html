@@ -16,53 +16,60 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Spike Language School</title>
 </head>
+<!-- BEM - naming convention: CamelCase style, blockName-elemName_modName_modeVal -->
 <body class="body">
-    <header class="header">  
-        <img class="header__hamburger-img" src="img/hamburgar-menu.svg" alt="hamburger menu icon">
-        <img  class="header__logo-img" src="img/logo.svg" alt="spike language school's logo">
-        <h1 class="header__h1">6 Languages <span class="header_h1-span">In</span> 1 School</h1>
-        <button class="header__btn">Free Trial</button>
-        <img class="header__english-man-img" src="img/affinited_english-man.png" alt="smiling English man in black suit">
-        <!-- <img  class="header__thai-woman-img" src="img/affinitied_thai-woman.png" alt="smiling Thai woman in black suit">
-        <img  class="header__japanese-woman-img" src="img/affinitied_japanese-woman.png" alt="smiling Japanese woman in black suit"> -->
+    <header class="header">
+        <article class="headerSection">
+            <img class="headerSection-hamburgerImg" src="img/hamburgar-menu.svg" alt="hamburger menu icon">
+            <img  class="headerSection-logoImg" src="img/logo.svg" alt="spike language school's logo">
+            <h1 class="headerSection-h1">6 Languages <span class="headerSection-h1Span">In</span> 1 School</h1>
+            <button class="headerSection-btn">Free Trial</button>
+            <img class="headerSection-img" src="img/affinited_english-man.png" alt="smiling English man in black suit">
+            <!-- <img  class="headerSection__img" src="img/affinitied_thai-woman.png" alt="smiling Thai woman in black suit">
+            <img  class="hheaderSection__img" src="img/affinitied_japanese-woman.png" alt="smiling Japanese woman in black suit"> -->
+        </article>
     </header>
     <main class="main">
-        <div class="main__img-container">
-            <img class="main__img" src="img/ch-affinitied-mobile.jpg" alt="Sink Road in sunny day">
-            <h2 class="main__h2-lang main__h2_yellow">Chinese</h2>
-            <p class="main__p-lang">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
-        </div>
-        <div class="main__img-container">
-            <img class="main__img" src="img/fr-affinitied-mobile.jpg" alt="Eiffel Tower with many trees around ">
-            <h2 class="main__h2-lang main__h2_yellow">French</h2>
-            <p class="main__p-lang">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
-        </div>
-        <div class="main__img-container">
-            <img class="main__img" src="img/th-affinitied-mobile.jpg" alt="Son taking a picture of his mom with golden Thai temple in the background">
-            <h2 class="main__h2-lang main__h2_yellow">Thai</h2>
-            <p class="main__p-lang">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
-        </div>
-        <div class="main__img-container">
-            <img class="main__img" src="img/jp-affinitied-mobile.jpg" alt="Japanese couple wearing kimonos with the woman putting a flower hairband on on her hair">
-            <h2 class="main__h2-lang main__h2_cyan">Japanese</h2>
-            <p class="main__p-lang">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
-        </div>
-        <div class="main__img-container">
-            <img class="main__img" src="img/en-affinitied-mobile.jpg" alt="The Statue of Liberty with pink airplane on the right top corner">
-            <h2 class="main__h2-lang main__h2_cyan">English</h2>
-            <p class="main__p-lang">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
-        </div>
-        <div class="main__img-container">
-            <img class="main__img" src="img/kr-affinitied-mobile.jpg" alt="Korean woman wearing a traditional Korean dress with holding a colorful paper fun and tying her hair with flower hairbands ">
-            <h2 class="main__h2-lang  main__h2_magenta">Korean</h2>
-            <p class="main__p-lang">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
-        </div>
-        <h2 class="main__h2-corp">Corporate Course</h2>
-        <p class="main__p-corp">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
-        <div class="main__circle">
-            <img class="main__img-corp" src="img/affinitied_corporate.png" alt="two big buildings connected together">
-        </div>
-        <button class="main__btn">Get Quote</button>
+        <article class="mainSection">
+            <section class="mainSection-ImgDivContainer">
+                <img class="main__img" src="img/ch-affinitied-mobile.jpg" alt="Sink Road in sunny day">
+                <h2 class="main__h2-lang main__h2_yellow">Chinese</h2>
+                <p class="main__p-lang">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
+            </section>
+            <section class="mainSection-ImgDivContainer">
+                <img class="main__img" src="img/fr-affinitied-mobile.jpg" alt="Eiffel Tower with many trees around ">
+                <h2 class="main__h2-lang main__h2_yellow">French</h2>
+                <p class="main__p-lang">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
+            </section>
+            <section class="mainSection-ImgDivContainer">
+                <img class="main__img" src="img/th-affinitied-mobile.jpg" alt="Son taking a picture of his mom with golden Thai temple in the background">
+                <h2 class="main__h2-lang main__h2_yellow">Thai</h2>
+                <p class="main__p-lang">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
+            </section>
+            <section class="mainSection-ImgDivContainer">
+                <img class="main__img" src="img/jp-affinitied-mobile.jpg" alt="Japanese couple wearing kimonos with the woman putting a flower hairband on on her hair">
+                <h2 class="main__h2-lang main__h2_cyan">Japanese</h2>
+                <p class="main__p-lang">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
+            </section>
+            <section class="mainSection-ImgDivContainer">
+                <img class="main__img" src="img/en-affinitied-mobile.jpg" alt="The Statue of Liberty with pink airplane on the right top corner">
+                <h2 class="main__h2-lang main__h2_cyan">English</h2>
+                <p class="main__p-lang">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
+            </section>
+            <section class="mainSection-ImgDivContainer">
+                <img class="main__img" src="img/kr-affinitied-mobile.jpg" alt="Korean woman wearing a traditional Korean dress with holding a colorful paper fun and tying her hair with flower hairbands ">
+                <h2 class="main__h2-lang  main__h2_magenta">Korean</h2>
+                <p class="main__p-lang">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
+            </section>
+        </article>
+        <atricle>
+            <h2 class="main__h2-corp">Corporate Course</h2>
+            <p class="main__p-corp">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
+            <div class="main__circle">
+                <img class="main__img-corp" src="img/affinitied_corporate.png" alt="two big buildings connected together">
+            </div>
+            <button class="main__btn">Get Quote</button>
+        </atricle>
     </main>
     <footer>
 

@@ -14,6 +14,7 @@ $additionalColor: #F0C0A8;
 
 
 
+
 // font
 @font-face {
     font-family: arialBlack;
@@ -23,27 +24,27 @@ $additionalColor: #F0C0A8;
 
   
 
-// LP
+// header
 .header {
     display: block;
     text-align: center;
 }
 
-.header__hamburger-img {
+.headerSection-hamburgerImg {
     width: 1.5rem;
     position: absolute;
     top: 0.7rem;
     right: 0.7rem;
 }
 
-.header__logo-img {
+.headerSection-logoImg {
     width: 7.5rem;
     display: block;
     margin: 0 auto;
     margin-top: 1.9rem;
 }
 
-.header__h1 {
+.headerSection-h1 {
     font-family: $arialBlack;
     font-size: 2.2rem;
     line-height: 3.3rem;
@@ -60,11 +61,11 @@ $additionalColor: #F0C0A8;
     margin-top: 1rem;
 }
 
-.header_h1-span{
+.headerSection-h1Span{
     display: block;
 }
 
-.header__btn {
+.headerSection-btn {
     font-family: $arial;
     font-size: 1.15rem;
     font-weight: 600;
@@ -78,25 +79,11 @@ $additionalColor: #F0C0A8;
     margin-top: 2.3rem;
 }
 
-.header__english-man-img {
+.headerSection-img {
     width: 12.5rem;
     display: block;
     margin: 0 auto;
     margin-top: 2.3rem;
-}
-
-.header__thai-woman-img {
-    width: 12.5rem;
-    display: block;
-    margin: 0 auto;
-    margin-top: 3rem;
-}
-
-.header__japanese-woman-img{
-    width: 12.5rem;
-    display: block;
-    margin: 0 auto;
-    margin-top: 3rem;
 }
 
 
@@ -104,7 +91,7 @@ $additionalColor: #F0C0A8;
 
 // main
 // langs
-.main__img-container {
+.mainSection-ImgDivContainer{
     position: relative;
     background-color: #000;
 }
