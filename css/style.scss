@@ -2,11 +2,13 @@
 
 
 
+// variables
 $arial: Arial, Helvetica, sans-serif;
 $arialBlack: arialBlack;
 $blackText: #353839;
 $pText: 6.6vw;
-$h2Text: 9vw;
+$h2Text: 9.3vw;
+$h3Text: 8vw;
 $primaryColor: #FFFFA6;
 $secondaryColor: #8BFCFC;
 $accentColor: #ED8CED;
@@ -15,152 +17,165 @@ $additionalColor: #F0C0A8;
 
 
 
-// font
+// define a font file
 @font-face {
     font-family: arialBlack;
     src: url(../arialBlack.ttf)
   }
   
 
-  
 
-// header
+
+
+// Blocks (only the ones used throughout the page)
+.btn {
+    font-family: $arial;
+    background-color: $accentColor;
+    color: #FFF;
+    border: none;
+    border-radius: 10px;
+    padding: 0.43rem 0;
+}
+
+.h2 {
+    font-family: $arialBlack;
+    font-size: $h2Text;
+    &_color_brown {
+        color: $additionalColor;
+    }
+    &_color_yellow {
+        color:$primaryColor;
+    }
+    &_color_cyan {
+        color: $secondaryColor;
+    }
+    &_color_magenta {
+        color: $accentColor;
+    }
+}
+
+.h3 {
+    font-family: $arialBlack;
+    font-size: $h3Text;
+    line-height: 2.2rem;
+    padding: 3.5rem 0;
+    &_color_brown {
+        color: $additionalColor;
+    }
+}
+
+.p {
+    font-family: $arial;
+    font-size: $pText;
+    line-height: 1.8rem;
+
+    &_color_white {
+        color: #FFF;
+    }   // modifier of key-value pair
+    &_color_black {
+        color: $blackText;
+    }
+}
+
+
+
+
+// Header
 .header {
     display: block;
     text-align: center;
+
+    &-btn {
+        margin: 0 auto;
+        margin-top: 2.3rem;
+        width: 7.3rem;
+        font-size: 1.15rem;
+        font-weight: 600;
+    }    // BEM mix
 }
 
-.headerSection-hamburgerImg {
-    width: 1.5rem;
-    position: absolute;
-    top: 0.7rem;
-    right: 0.7rem;
-}
-
-.headerSection-logoImg {
-    width: 7.5rem;
-    display: block;
-    margin: 0 auto;
-    margin-top: 1.9rem;
-}
-
-.headerSection-h1 {
-    font-family: $arialBlack;
-    font-size: 2.2rem;
-    line-height: 3.3rem;
-    background: -webkit-linear-gradient($primaryColor 30%, $secondaryColor);   // gradient text
-    background-clip: text;   //  standard style rule on background-clip
-    -webkit-background-clip: text;   // gradient text
-    -webkit-text-fill-color: transparent;   // gradient text
-    text-shadow: 0px 0px #00000000;   // gradient text
-    // background: -webkit-linear-gradient(#FFFFA6 30%, #8BFCFC);   // gradient text
-    // background-clip: text;   //  standard style rule on background-clip
-    // -webkit-background-clip: text;   // gradient text
-    // -webkit-text-fill-color: transparent;   // gradient text
-    -webkit-text-stroke: 0.1px rgba($color: #353839, $alpha: 0.4);    // border on gradient text
-    margin-top: 1rem;
-}
-
-.headerSection-h1Span{
-    display: block;
-}
-
-.headerSection-btn {
-    font-family: $arial;
-    font-size: 1.15rem;
-    font-weight: 600;
-    width: 7.3rem;
-    background-color: $accentColor;
-    color: #FFF;
-    margin: 0 auto;
-    padding: 0.43rem 0;
-    border: none;
-    border-radius: 10px;
-    margin-top: 2.3rem;
-}
-
-.headerSection-img {
-    width: 12.5rem;
-    display: block;
-    margin: 0 auto;
-    margin-top: 2.3rem;
+.headerArticle {
+    &-hamburgerImg {
+        width: 1.5rem;
+        position: absolute;
+        top: 0.7rem;
+        right: 0.7rem;
+    }
+    &-logoImg {
+        width: 7.5rem;
+        display: block;
+        margin: 0 auto;
+        margin-top: 1.9rem;
+    }
+    &-h1 {
+        font-family: $arialBlack;
+        font-size: 2.2rem;
+        line-height: 3.3rem;
+        background: -webkit-linear-gradient($primaryColor 30%, $secondaryColor);   // gradient text
+        background-clip: text;   //  standard style rule on background-clip
+        -webkit-background-clip: text;   // gradient text
+        -webkit-text-fill-color: transparent;   // gradient text
+        text-shadow: 0px 0px #00000000;   // gradient text
+        -webkit-text-stroke: 0.1px rgba($color: #353839, $alpha: 0.4);    // border on gradient text
+        margin-top: 1rem;
+    }
+    &-h1Span{
+        display: block;
+    }
+    
+    &-img {
+        width: 12.5rem;
+        display: block;
+        margin: 0 auto;
+        margin-top: 2.3rem;
+    }
 }
 
 
 
 
-// main
+// Main
 // langs
-.mainSection-ImgDivContainer{
+.sectionMainLang{
     position: relative;
     background-color: #000;
-}
 
-.main__img {
-    width: 100%;
-    height: auto;
-    opacity: 0.5;
-}
-
-.main__h2-lang {
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%);
-    font-family: $arialBlack;
-    font-size: $h2Text;
-}
-
-.main__h2_yellow {
-    color:$primaryColor;
-}
-
-.main__h2_cyan {
-    color: $secondaryColor;
-}
-
-.main__h2_magenta {
-    color: $accentColor;
-}
-
-
-.main__p-lang {
-    position: absolute;
-    top: 38%;
-    left: 50%;
-    transform: translate(-50%);
-    font-family: $arial;
-    color: #FFF;
-    font-size: $pText;
-    width: 80vw;
-    line-height: 1.8rem;
-    text-align: center;
+    &-Img {
+        width: 100%;
+        height: auto;
+        opacity: 0.5;
+    }
+    &-h2 {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    &-p {
+        position: absolute;
+        top: 38%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 80vw;
+        text-align: center;
+    }
 }
 
 
 
 
 // corp
-.main__h2-corp {
-    font-family: $arialBlack;
-    font-size: $h2Text;
-    margin-top: 3.5rem;
+.articleMainCorp-h3 {
     text-align: center;
-    color: $additionalColor;
 }
 
-.main__p-corp {
-    font-family: $arial;
-    color: $blackText;
-    font-size: $pText;
-    line-height: 1.8rem;
+.articleMainCorp-p {
     margin: 0 auto;
-    text-align: center;
-    margin-top: 3.5rem;
     width: 74vw;
+    text-align: center;
 }
 
-.main__circle {
+.circle {
     position: relative;
     height: 13rem;
     width: 13rem;
@@ -170,25 +185,73 @@ $additionalColor: #F0C0A8;
     margin-top: 3.5rem;
 }
 
-.main__img-corp {
+.articleMainCorp-img {
     position: absolute;
     top: 6%;
     left: 10%;
     width: 10rem;
 }
 
-.main__btn {
+.main-btn {
     display: block;
-    font-family: $arial;
-    font-size: 1.15rem;
-    font-weight: 600;
-    width: 8rem;
-    background-color: $accentColor;
-    color: #FFF;
     margin: 0 auto;
-    padding: 0.45rem 0;
-    border: none;
-    border-radius: 10px;
     margin-top: 3rem;
     margin-bottom: 3rem;
+    width: 7.3rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+}    // BEM mix
+
+
+
+
+// Method
+.articleMainMethod {
+    width: 100vw;
+    height: 30rem;
+    &_color_brown {
+        background-color: $additionalColor;
+    }
+    &_color_yellow {
+        background-color: $primaryColor;
+    }
+    &_color_cyan {
+        background-color: $secondaryColor;
+    }
+}
+
+.sectionMainMethod-h3 {
+    text-align: center;
+}
+
+.sectionMainMethod-h3Span {
+    display: block;
+}
+
+.sectionMainMethod-p {
+    text-align: center;
+    margin: 0 auto;
+    width: 74vw;
+    padding-bottom: 3.5rem;
+}
+
+
+
+// Native
+.sectionMainNative-h3 {
+    text-align: center;
+}
+
+.sectionMainNative-p {
+    text-align: center;
+    margin: 0 auto;
+    width: 74vw;
+    padding-bottom: 3.5rem;
+}
+
+.sectionMainNative-img {
+    display: block;
+    margin: 0 auto;
+    width: 10rem;
+    padding-bottom: 3.5rem;
 }
