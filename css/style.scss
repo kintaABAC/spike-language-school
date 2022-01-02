@@ -40,6 +40,8 @@ $additionalColor: #F0C0A8;
 .h2 {
     font-family: $arialBlack;
     font-size: $h2Text;
+    color: $blackText;
+    
     &_color_brown {
         color: $additionalColor;
     }
@@ -57,8 +59,9 @@ $additionalColor: #F0C0A8;
 .h3 {
     font-family: $arialBlack;
     font-size: $h3Text;
+    color: $blackText;
     line-height: 2.2rem;
-    padding: 3.5rem 0;
+
     &_color_brown {
         color: $additionalColor;
     }
@@ -67,6 +70,7 @@ $additionalColor: #F0C0A8;
 .p {
     font-family: $arial;
     font-size: $pText;
+    color: $blackText;
     line-height: 1.8rem;
 
     &_color_white {
@@ -167,6 +171,7 @@ $additionalColor: #F0C0A8;
 // corp
 .articleMainCorp-h3 {
     text-align: center;
+    padding: 3.5rem 0;
 }
 
 .articleMainCorp-p {
@@ -208,7 +213,6 @@ $additionalColor: #F0C0A8;
 // Method
 .articleMainMethod {
     width: 100vw;
-    height: 30rem;
     &_color_brown {
         background-color: $additionalColor;
     }
@@ -222,6 +226,7 @@ $additionalColor: #F0C0A8;
 
 .sectionMainMethod-h3 {
     text-align: center;
+    padding: 3.5rem 0;
 }
 
 .sectionMainMethod-h3Span {
@@ -238,20 +243,69 @@ $additionalColor: #F0C0A8;
 
 
 // Native
-.sectionMainNative-h3 {
+.articleMainNative-h3 {
     text-align: center;
+    padding: 3.5rem 0;
 }
 
-.sectionMainNative-p {
+.articleMainNative-p {
     text-align: center;
     margin: 0 auto;
     width: 74vw;
     padding-bottom: 3.5rem;
 }
 
-.sectionMainNative-img {
+.articleMainNative-img {
     display: block;
     margin: 0 auto;
     width: 10rem;
     padding-bottom: 3.5rem;
+}
+
+
+
+
+// Footer
+// sms
+.smsImg {
+    width: 3rem;
+    margin: 2rem 0;
+}
+
+.footerSms {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 7rem;
+    background-color: rgba($color: $blackText, $alpha: 0.07);
+}
+
+
+
+
+// about us
+.footerAboutUs {
+    position: relative;
+}
+
+.footerLogoImg {
+    position: absolute;
+    width: 10rem;
+    top: 9.4rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0.15;
+}
+
+.footerAboutUs_h3 {
+    text-align: center;
+    padding: 3.5rem 0 6rem 0;
+}
+
+.footerAboutUs_p {
+    width: 74vw;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 6rem;
 }

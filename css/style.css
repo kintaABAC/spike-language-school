@@ -15,6 +15,7 @@
 .h2 {
   font-family: arialBlack;
   font-size: 9.3vw;
+  color: #353839;
 }
 
 .h2_color_brown {
@@ -36,8 +37,8 @@
 .h3 {
   font-family: arialBlack;
   font-size: 8vw;
+  color: #353839;
   line-height: 2.2rem;
-  padding: 3.5rem 0;
 }
 
 .h3_color_brown {
@@ -47,6 +48,7 @@
 .p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 6.6vw;
+  color: #353839;
   line-height: 1.8rem;
 }
 
@@ -140,6 +142,7 @@
 
 .articleMainCorp-h3 {
   text-align: center;
+  padding: 3.5rem 0;
 }
 
 .articleMainCorp-p {
@@ -177,7 +180,6 @@
 
 .articleMainMethod {
   width: 100vw;
-  height: 30rem;
 }
 
 .articleMainMethod_color_brown {
@@ -194,6 +196,7 @@
 
 .sectionMainMethod-h3 {
   text-align: center;
+  padding: 3.5rem 0;
 }
 
 .sectionMainMethod-h3Span {
@@ -207,21 +210,65 @@
   padding-bottom: 3.5rem;
 }
 
-.sectionMainNative-h3 {
+.articleMainNative-h3 {
   text-align: center;
+  padding: 3.5rem 0;
 }
 
-.sectionMainNative-p {
+.articleMainNative-p {
   text-align: center;
   margin: 0 auto;
   width: 74vw;
   padding-bottom: 3.5rem;
 }
 
-.sectionMainNative-img {
+.articleMainNative-img {
   display: block;
   margin: 0 auto;
   width: 10rem;
   padding-bottom: 3.5rem;
+}
+
+.smsImg {
+  width: 3rem;
+  margin: 2rem 0;
+}
+
+.footerSms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100vw;
+  height: 7rem;
+  background-color: rgba(53, 56, 57, 0.07);
+}
+
+.footerAboutUs {
+  position: relative;
+}
+
+.footerLogoImg {
+  position: absolute;
+  width: 10rem;
+  top: 9.4rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  opacity: 0.15;
+}
+
+.footerAboutUs_h3 {
+  text-align: center;
+  padding: 3.5rem 0 6rem 0;
+}
+
+.footerAboutUs_p {
+  width: 74vw;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 6rem;
 }
 /*# sourceMappingURL=style.css.map */
