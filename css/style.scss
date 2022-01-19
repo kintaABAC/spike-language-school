@@ -30,18 +30,15 @@ $additionalColor: #F0C0A8;
 // Blocks (only the ones used throughout the page)
 .btn {
     font-family: $arial;
-    background-color: $accentColor;
-    color: #FFF;
     border: none;
     border-radius: 10px;
-    padding: 0.43rem 0;
 }
 
 .h2 {
     font-family: $arialBlack;
     font-size: $h2Text;
-    color: $blackText;
-    
+    color: $blackText;    // default black color text to be a little grayish
+
     &_color_brown {
         color: $additionalColor;
     }
@@ -59,8 +56,8 @@ $additionalColor: #F0C0A8;
 .h3 {
     font-family: $arialBlack;
     font-size: $h3Text;
-    color: $blackText;
-    line-height: 2.2rem;
+    color: $blackText;   // default black color text to be a little grayish
+    line-height: 120%;
 
     &_color_brown {
         color: $additionalColor;
@@ -70,8 +67,8 @@ $additionalColor: #F0C0A8;
 .p {
     font-family: $arial;
     font-size: $pText;
-    color: $blackText;
-    line-height: 1.8rem;
+    color: $blackText;   // default black color text to be a little grayish
+    line-height: 120%;
 
     &_color_white {
         color: #FFF;
@@ -90,48 +87,51 @@ $additionalColor: #F0C0A8;
     text-align: center;
 
     &-btn {
+        padding: 1.5vw 0;
         margin: 0 auto;
-        margin-top: 2.3rem;
-        width: 7.3rem;
-        font-size: 1.15rem;
+        margin-top: 12vw;
+        margin-bottom: 12vw;
+        width: 28vw;
+        color: #FFF;
+        background-color: $accentColor;
+        font-size: 4.5vw;
         font-weight: 600;
     }    // BEM mix
 }
 
 .headerArticle {
     &-hamburgerImg {
-        width: 1.5rem;
+        width: 6.5vw;
         position: absolute;
-        top: 0.7rem;
-        right: 0.7rem;
+        top: 3vw;
+        right: 3vw;
     }
     &-logoImg {
-        width: 7.5rem;
+        width: 32vw;
         display: block;
         margin: 0 auto;
-        margin-top: 1.9rem;
+        margin-top: 8vw;
     }
     &-h1 {
         font-family: $arialBlack;
-        font-size: 2.2rem;
-        line-height: 3.3rem;
+        font-size: 9vw;
+        line-height: 13vw;
         background: -webkit-linear-gradient($primaryColor 30%, $secondaryColor);   // gradient text
         background-clip: text;   //  standard style rule on background-clip
         -webkit-background-clip: text;   // gradient text
         -webkit-text-fill-color: transparent;   // gradient text
         text-shadow: 0px 0px #00000000;   // gradient text
         -webkit-text-stroke: 0.1px rgba($color: #353839, $alpha: 0.4);    // border on gradient text
-        margin-top: 1rem;
+        margin-top: 6vw;
     }
     &-h1Span{
         display: block;
     }
     
     &-img {
-        width: 12.5rem;
+        width: 51.5vw;
         display: block;
         margin: 0 auto;
-        margin-top: 2.3rem;
     }
 }
 
@@ -157,7 +157,7 @@ $additionalColor: #F0C0A8;
     }
     &-p {
         position: absolute;
-        top: 38%;
+        top: 34.5%;
         left: 50%;
         transform: translate(-50%);
         width: 80vw;
@@ -171,7 +171,7 @@ $additionalColor: #F0C0A8;
 // corp
 .articleMainCorp-h3 {
     text-align: center;
-    padding: 3.5rem 0;
+    padding: 13vw 0;
 }
 
 .articleMainCorp-p {
@@ -182,28 +182,31 @@ $additionalColor: #F0C0A8;
 
 .circle {
     position: relative;
-    height: 13rem;
-    width: 13rem;
+    height: 54vw;
+    width: 54vw;
     background-color: $secondaryColor;
     border-radius: 50%;
     margin: 0 auto;
-    margin-top: 3.5rem;
+    margin-top: 13vw;
 }
 
 .articleMainCorp-img {
     position: absolute;
     top: 6%;
     left: 10%;
-    width: 10rem;
+    width: 80%;
 }
 
 .main-btn {
     display: block;
     margin: 0 auto;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    width: 7.3rem;
-    font-size: 1.15rem;
+    margin-top: 13vw;
+    margin-bottom: 13vw;
+    width: 31vw;
+    color: #FFF;
+    background-color: $accentColor;
+    font-size: 4.7vw;
+    padding: 2vw 0;
     font-weight: 600;
 }    // BEM mix
 
@@ -226,7 +229,7 @@ $additionalColor: #F0C0A8;
 
 .sectionMainMethod-h3 {
     text-align: center;
-    padding: 3.5rem 0;
+    padding: 13vw 0;
 }
 
 .sectionMainMethod-h3Span {
@@ -237,7 +240,7 @@ $additionalColor: #F0C0A8;
     text-align: center;
     margin: 0 auto;
     width: 74vw;
-    padding-bottom: 3.5rem;
+    padding-bottom: 13vw;
 }
 
 
@@ -245,21 +248,21 @@ $additionalColor: #F0C0A8;
 // Native
 .articleMainNative-h3 {
     text-align: center;
-    padding: 3.5rem 0;
+    padding: 13vw 0;
 }
 
 .articleMainNative-p {
     text-align: center;
     margin: 0 auto;
     width: 74vw;
-    padding-bottom: 3.5rem;
+    padding-bottom: 13vw;
 }
 
 .articleMainNative-img {
     display: block;
     margin: 0 auto;
-    width: 10rem;
-    padding-bottom: 3.5rem;
+    width: 40vw;
+    padding-bottom: 13vw;
 }
 
 
@@ -268,15 +271,16 @@ $additionalColor: #F0C0A8;
 // Footer
 // sms
 .smsImg {
-    width: 3rem;
-    margin: 2rem 0;
+    width: 12vw;
+    height: 12vw;
+    margin: 9vw 0;
 }
 
 .footerSms {
     display: flex;
     justify-content: space-evenly;
     width: 100vw;
-    height: 7rem;
+    height: 30vw;
     background-color: rgba($color: $blackText, $alpha: 0.07);
 }
 
@@ -290,22 +294,247 @@ $additionalColor: #F0C0A8;
 
 .footerLogoImg {
     position: absolute;
-    width: 10rem;
-    top: 9.4rem;
+    width: 40vw;
+    top: 40vw;
     left: 0;
     right: 0;
     margin: auto;
     opacity: 0.15;
 }
 
-.footerAboutUs_h3 {
+.footerAboutUs-h3 {
     text-align: center;
-    padding: 3.5rem 0 6rem 0;
+    padding: 16vw 0 21vw 0;
 }
 
-.footerAboutUs_p {
+.footerAboutUs-p {
     width: 74vw;
     margin: 0 auto;
     text-align: center;
-    padding-bottom: 6rem;
+    padding-bottom: 24vw;
 }
+
+
+
+
+// form
+.footerContact {
+    background-color: $primaryColor;
+}
+
+.footerContact-h3 {
+    text-align: center;
+    padding: 13vw 0;
+}
+
+.formInput {
+    border: 2px solid rgba($color: #73A1C2, $alpha: 0.7);
+    font-family: $arial;
+    font-size: 2.5vw;
+}
+
+.emailInput {
+    display: block;
+    height: 9vw;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    width: 75vw;
+    border-radius: 10px;
+}
+
+.subjectInput {
+    display: block;
+    height: 9vw;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    width: 75vw;
+    border-radius: 10px;
+    background: url("../img/triangle.svg") no-repeat;
+    background-color: white;
+    background-size: 0.65rem;
+    background-position-x: 70vw;
+    background-position-y: 0.8rem;
+}
+
+.msgInput {
+    display: block;
+    height: 18vw;
+    margin: 0 auto;
+    margin-bottom: 21vw;
+    width: 75vw;
+    border-radius: 10px;
+}
+
+.btn_submit {
+    display: block;
+    padding: 3.3vw 22vw;
+    margin: 0 auto;
+    margin-bottom: 21vw;
+    background-color: $secondaryColor;
+    color: $blackText;
+    font-size: 5.2vw;
+    font-weight: 600;
+}
+
+.footerContact-info {
+    width: 80vw;
+    margin: 0 auto;
+    margin-bottom: 3.5vw;
+    font-size: 4.25vw;
+    text-align: center;
+}
+
+.footerContact-info_auth {
+    padding-bottom: 21vw;
+}
+
+.footerContact-spanPAuth {
+    display: block;
+}
+
+.formInput::placeholder {
+    position: absolute;
+    left: 2.5vw;  
+    top: 2.2vw;
+}
+
+
+
+
+
+
+// Media query for tablets, starting at 400px
+@media only screen and (min-width: 400px) {
+    .h2 {
+        font-size: 2.3rem;
+    }
+    .h3 {
+        font-size: 2rem;
+    }
+    .p {
+        font-size: 1.65rem;
+    }
+    .circle {
+        height: 13.5rem;
+        width: 13.5rem;
+        margin-top: 5rem;
+    }
+    .main-btn {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        width: 7.7rem;
+        font-size: 1.2rem;
+    }
+    .header-btn {
+        font-size: 1.1rem;
+        padding: 0.5rem 0;
+        width: 7rem;
+    }
+    .smsImg {
+        width: 3rem;
+        height: 3rem;
+        margin: 2.3rem 0;
+    }
+    .headerArticle {
+        &-h1 {
+            font-size: 2.2rem;
+            line-height: 3.3rem;
+            margin-top: 1.4rem;
+        }
+        &-logoImg {
+            width: 8rem;
+        }
+        &-img {
+            width: 13rem;
+        }
+        &-hamburgerImg {
+            width: 1.6rem;
+            position: absolute;
+            top: 3vw;
+            right: 3vw;
+        }
+    }
+    .sectionMainMethod {
+        &-h3 {
+            padding: 3.3rem 0;
+        }
+        &-p {
+            padding-bottom: 3.3rem;
+        }
+    }
+    .articleMainNative {
+        &-h3 {
+            padding: 6rem 0;
+        }
+        
+        &-p {
+            padding-bottom: 6.1rem;
+        }
+        
+        &-img {
+            width: 12rem;
+            padding-bottom: 6.1rem;
+        }
+    }
+    .footerSms {
+        width: 100vw;
+        height: 8rem;
+    }
+    .footerLogoImg {
+        width: 10rem;
+        top: 10rem;
+    }
+    .footerAboutUs-h3 {
+        padding: 4rem 0 5.2rem 0;
+    }
+    .footerAboutUs-p {
+        width: 18.5rem;
+        padding-bottom: 6rem;
+    }
+    .footerContact-h3 {
+        padding: 3.1rem 0;
+    }
+    .formInput {
+        font-size: 0.65rem;
+    }
+    .emailInput {
+        height: 2.1rem;
+    }
+    .subjectInput {
+        height: 2.1rem;
+        width: 75vw;
+    }
+    .msgInput {
+        height: 4.5rem;
+        margin-bottom: 5rem;
+        width: 75vw;
+    }
+    .btn_submit {
+        padding: 0.8rem 5.5rem;
+        margin-bottom: 5.2rem;
+        font-size: 1.3rem;
+    }
+    .footerContact-info {
+        width: 80vw;
+        margin-bottom: 1rem;
+        font-size: 1.05rem;
+    }
+    .footerContact-info_auth {
+        padding-bottom: 5.2rem;
+    }
+    .formInput::placeholder {
+        left: 0.6rem;  
+        top: 0.6rem;
+    }
+  }
+
+
+
+
+
+  // Media query for computers, starting at 769px
+@media only screen and (min-width: 769px) {
+    body {
+      display: none;
+    }
+  }

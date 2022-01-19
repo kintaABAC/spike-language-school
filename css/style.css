@@ -5,11 +5,8 @@
 
 .btn {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #ED8CED;
-  color: #FFF;
   border: none;
   border-radius: 10px;
-  padding: 0.43rem 0;
 }
 
 .h2 {
@@ -38,7 +35,7 @@
   font-family: arialBlack;
   font-size: 8vw;
   color: #353839;
-  line-height: 2.2rem;
+  line-height: 120%;
 }
 
 .h3_color_brown {
@@ -49,7 +46,7 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 6.6vw;
   color: #353839;
-  line-height: 1.8rem;
+  line-height: 120%;
 }
 
 .p_color_white {
@@ -66,38 +63,42 @@
 }
 
 .header-btn {
+  padding: 1.5vw 0;
   margin: 0 auto;
-  margin-top: 2.3rem;
-  width: 7.3rem;
-  font-size: 1.15rem;
+  margin-top: 12vw;
+  margin-bottom: 12vw;
+  width: 28vw;
+  color: #FFF;
+  background-color: #ED8CED;
+  font-size: 4.5vw;
   font-weight: 600;
 }
 
 .headerArticle-hamburgerImg {
-  width: 1.5rem;
+  width: 6.5vw;
   position: absolute;
-  top: 0.7rem;
-  right: 0.7rem;
+  top: 3vw;
+  right: 3vw;
 }
 
 .headerArticle-logoImg {
-  width: 7.5rem;
+  width: 32vw;
   display: block;
   margin: 0 auto;
-  margin-top: 1.9rem;
+  margin-top: 8vw;
 }
 
 .headerArticle-h1 {
   font-family: arialBlack;
-  font-size: 2.2rem;
-  line-height: 3.3rem;
+  font-size: 9vw;
+  line-height: 13vw;
   background: -webkit-linear-gradient(#FFFFA6 30%, #8BFCFC);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 0px 0px #00000000;
   -webkit-text-stroke: 0.1px rgba(53, 56, 57, 0.4);
-  margin-top: 1rem;
+  margin-top: 6vw;
 }
 
 .headerArticle-h1Span {
@@ -105,10 +106,9 @@
 }
 
 .headerArticle-img {
-  width: 12.5rem;
+  width: 51.5vw;
   display: block;
   margin: 0 auto;
-  margin-top: 2.3rem;
 }
 
 .sectionMainLang {
@@ -132,7 +132,7 @@
 
 .sectionMainLang-p {
   position: absolute;
-  top: 38%;
+  top: 34.5%;
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
@@ -142,7 +142,7 @@
 
 .articleMainCorp-h3 {
   text-align: center;
-  padding: 3.5rem 0;
+  padding: 13vw 0;
 }
 
 .articleMainCorp-p {
@@ -153,28 +153,31 @@
 
 .circle {
   position: relative;
-  height: 13rem;
-  width: 13rem;
+  height: 54vw;
+  width: 54vw;
   background-color: #8BFCFC;
   border-radius: 50%;
   margin: 0 auto;
-  margin-top: 3.5rem;
+  margin-top: 13vw;
 }
 
 .articleMainCorp-img {
   position: absolute;
   top: 6%;
   left: 10%;
-  width: 10rem;
+  width: 80%;
 }
 
 .main-btn {
   display: block;
   margin: 0 auto;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  width: 7.3rem;
-  font-size: 1.15rem;
+  margin-top: 13vw;
+  margin-bottom: 13vw;
+  width: 31vw;
+  color: #FFF;
+  background-color: #ED8CED;
+  font-size: 4.7vw;
+  padding: 2vw 0;
   font-weight: 600;
 }
 
@@ -196,7 +199,7 @@
 
 .sectionMainMethod-h3 {
   text-align: center;
-  padding: 3.5rem 0;
+  padding: 13vw 0;
 }
 
 .sectionMainMethod-h3Span {
@@ -207,31 +210,32 @@
   text-align: center;
   margin: 0 auto;
   width: 74vw;
-  padding-bottom: 3.5rem;
+  padding-bottom: 13vw;
 }
 
 .articleMainNative-h3 {
   text-align: center;
-  padding: 3.5rem 0;
+  padding: 13vw 0;
 }
 
 .articleMainNative-p {
   text-align: center;
   margin: 0 auto;
   width: 74vw;
-  padding-bottom: 3.5rem;
+  padding-bottom: 13vw;
 }
 
 .articleMainNative-img {
   display: block;
   margin: 0 auto;
-  width: 10rem;
-  padding-bottom: 3.5rem;
+  width: 40vw;
+  padding-bottom: 13vw;
 }
 
 .smsImg {
-  width: 3rem;
-  margin: 2rem 0;
+  width: 12vw;
+  height: 12vw;
+  margin: 9vw 0;
 }
 
 .footerSms {
@@ -242,7 +246,7 @@
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   width: 100vw;
-  height: 7rem;
+  height: 30vw;
   background-color: rgba(53, 56, 57, 0.07);
 }
 
@@ -252,23 +256,255 @@
 
 .footerLogoImg {
   position: absolute;
-  width: 10rem;
-  top: 9.4rem;
+  width: 40vw;
+  top: 40vw;
   left: 0;
   right: 0;
   margin: auto;
   opacity: 0.15;
 }
 
-.footerAboutUs_h3 {
+.footerAboutUs-h3 {
   text-align: center;
-  padding: 3.5rem 0 6rem 0;
+  padding: 16vw 0 21vw 0;
 }
 
-.footerAboutUs_p {
+.footerAboutUs-p {
   width: 74vw;
   margin: 0 auto;
   text-align: center;
-  padding-bottom: 6rem;
+  padding-bottom: 24vw;
+}
+
+.footerContact {
+  background-color: #FFFFA6;
+}
+
+.footerContact-h3 {
+  text-align: center;
+  padding: 13vw 0;
+}
+
+.formInput {
+  border: 2px solid rgba(115, 161, 194, 0.7);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5vw;
+}
+
+.emailInput {
+  display: block;
+  height: 9vw;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  width: 75vw;
+  border-radius: 10px;
+}
+
+.subjectInput {
+  display: block;
+  height: 9vw;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  width: 75vw;
+  border-radius: 10px;
+  background: url("../img/triangle.svg") no-repeat;
+  background-color: white;
+  background-size: 0.65rem;
+  background-position-x: 70vw;
+  background-position-y: 0.8rem;
+}
+
+.msgInput {
+  display: block;
+  height: 18vw;
+  margin: 0 auto;
+  margin-bottom: 21vw;
+  width: 75vw;
+  border-radius: 10px;
+}
+
+.btn_submit {
+  display: block;
+  padding: 3.3vw 22vw;
+  margin: 0 auto;
+  margin-bottom: 21vw;
+  background-color: #8BFCFC;
+  color: #353839;
+  font-size: 5.2vw;
+  font-weight: 600;
+}
+
+.footerContact-info {
+  width: 80vw;
+  margin: 0 auto;
+  margin-bottom: 3.5vw;
+  font-size: 4.25vw;
+  text-align: center;
+}
+
+.footerContact-info_auth {
+  padding-bottom: 21vw;
+}
+
+.footerContact-spanPAuth {
+  display: block;
+}
+
+.formInput::-webkit-input-placeholder {
+  position: absolute;
+  left: 2.5vw;
+  top: 2.2vw;
+}
+
+.formInput:-ms-input-placeholder {
+  position: absolute;
+  left: 2.5vw;
+  top: 2.2vw;
+}
+
+.formInput::-ms-input-placeholder {
+  position: absolute;
+  left: 2.5vw;
+  top: 2.2vw;
+}
+
+.formInput::placeholder {
+  position: absolute;
+  left: 2.5vw;
+  top: 2.2vw;
+}
+
+@media only screen and (min-width: 400px) {
+  .h2 {
+    font-size: 2.3rem;
+  }
+  .h3 {
+    font-size: 2rem;
+  }
+  .p {
+    font-size: 1.65rem;
+  }
+  .circle {
+    height: 13.5rem;
+    width: 13.5rem;
+    margin-top: 5rem;
+  }
+  .main-btn {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    width: 7.7rem;
+    font-size: 1.2rem;
+  }
+  .header-btn {
+    font-size: 1.1rem;
+    padding: 0.5rem 0;
+    width: 7rem;
+  }
+  .smsImg {
+    width: 3rem;
+    height: 3rem;
+    margin: 2.3rem 0;
+  }
+  .headerArticle-h1 {
+    font-size: 2.2rem;
+    line-height: 3.3rem;
+    margin-top: 1.4rem;
+  }
+  .headerArticle-logoImg {
+    width: 8rem;
+  }
+  .headerArticle-img {
+    width: 13rem;
+  }
+  .headerArticle-hamburgerImg {
+    width: 1.6rem;
+    position: absolute;
+    top: 3vw;
+    right: 3vw;
+  }
+  .sectionMainMethod-h3 {
+    padding: 3.3rem 0;
+  }
+  .sectionMainMethod-p {
+    padding-bottom: 3.3rem;
+  }
+  .articleMainNative-h3 {
+    padding: 6rem 0;
+  }
+  .articleMainNative-p {
+    padding-bottom: 6.1rem;
+  }
+  .articleMainNative-img {
+    width: 12rem;
+    padding-bottom: 6.1rem;
+  }
+  .footerSms {
+    width: 100vw;
+    height: 8rem;
+  }
+  .footerLogoImg {
+    width: 10rem;
+    top: 10rem;
+  }
+  .footerAboutUs-h3 {
+    padding: 4rem 0 5.2rem 0;
+  }
+  .footerAboutUs-p {
+    width: 18.5rem;
+    padding-bottom: 6rem;
+  }
+  .footerContact-h3 {
+    padding: 3.1rem 0;
+  }
+  .formInput {
+    font-size: 0.65rem;
+  }
+  .emailInput {
+    height: 2.1rem;
+  }
+  .subjectInput {
+    height: 2.1rem;
+    width: 75vw;
+  }
+  .msgInput {
+    height: 4.5rem;
+    margin-bottom: 5rem;
+    width: 75vw;
+  }
+  .btn_submit {
+    padding: 0.8rem 5.5rem;
+    margin-bottom: 5.2rem;
+    font-size: 1.3rem;
+  }
+  .footerContact-info {
+    width: 80vw;
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+  }
+  .footerContact-info_auth {
+    padding-bottom: 5.2rem;
+  }
+  .formInput::-webkit-input-placeholder {
+    left: 0.6rem;
+    top: 0.6rem;
+  }
+  .formInput:-ms-input-placeholder {
+    left: 0.6rem;
+    top: 0.6rem;
+  }
+  .formInput::-ms-input-placeholder {
+    left: 0.6rem;
+    top: 0.6rem;
+  }
+  .formInput::placeholder {
+    left: 0.6rem;
+    top: 0.6rem;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  body {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
